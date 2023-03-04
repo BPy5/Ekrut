@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e3c68c;" stylesheets="@../../git/CommonSem5Proj/Common/Common/css/buttons.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.CustomerServiceWorkerController">
+   <children>
+      <Button fx:id="logoutBtn" layoutX="269.0" layoutY="526.0" mnemonicParsing="false" onAction="#Logout" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/exit-buttons.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="titleLbl" alignment="CENTER" layoutX="311.0" layoutY="14.0" prefHeight="99.0" prefWidth="376.0" text="Welcome" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="40.0" />
+         </font>
+      </Label>
+      <VBox alignment="BASELINE_CENTER" layoutX="-18.0" layoutY="-15.0" opacity="0.91" prefHeight="639.0" prefWidth="183.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Button fx:id="addBtn" layoutX="525.0" layoutY="526.0" mnemonicParsing="false" onAction="#Add" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="FirstNametxt" layoutX="433.0" layoutY="126.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+      <Text fill="#7c6435" layoutX="282.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name" wrappingWidth="166.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#7c6435" layoutX="282.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name" wrappingWidth="166.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="LastNametxt" layoutX="433.0" layoutY="166.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="Idtxt" layoutX="433.0" layoutY="207.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+      <Text fill="#7c6435" layoutX="282.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id number" wrappingWidth="166.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#7c6435" layoutX="282.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number" wrappingWidth="148.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="PhoneNumbertxt" layoutX="433.0" layoutY="247.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="Emailtxt" layoutX="433.0" layoutY="289.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+      <Text fill="#7c6435" layoutX="282.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="166.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#7c6435" layoutX="282.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit card" wrappingWidth="166.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="CreditCardtxt" layoutX="433.0" layoutY="329.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="Usernametxt" layoutX="433.0" layoutY="370.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+      <Text fill="#7c6435" layoutX="282.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="166.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#7c6435" layoutX="282.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="166.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Passwordtxt" layoutX="433.0" layoutY="410.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+      <Text fill="#7c6435" layoutX="282.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" wrappingWidth="166.00001300871372">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Roletxt" layoutX="433.0" layoutY="452.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 10;" />
+   </children>
+</AnchorPane>

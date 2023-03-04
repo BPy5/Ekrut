@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e3c68c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.EKTLoginController">
+   <children>
+      <Button fx:id="backBtn" layoutX="269.0" layoutY="526.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/exit-buttons.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="loginBtn" layoutX="547.0" layoutY="526.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <VBox alignment="BASELINE_CENTER" layoutX="-9.0" layoutY="-6.0" prefHeight="626.0" prefWidth="230.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <ComboBox fx:id="cmbUser" editable="true" layoutX="457.0" layoutY="317.0" onAction="#Selectuser" prefWidth="150.0" promptText="enter user id" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/comboboxDesign.css" />
+      <Label layoutX="371.0" layoutY="310.0" prefHeight="39.0" prefWidth="55.0" text="ID:" textFill="#6b5a32">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="135.0" prefHeight="39.0" text="Please insert your user id" textFill="#6b5a32">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="72.0" prefHeight="63.0" prefWidth="383.0" text="EKRUT Subscriber" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

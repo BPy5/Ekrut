@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="960.0" style="-fx-background-color: #e3c68c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.ekrutOrderController">
+   <children>
+      <VBox alignment="BASELINE_CENTER" layoutX="-9.0" layoutY="-4.0" prefHeight="763.0" prefWidth="196.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Pane layoutX="255.0" layoutY="161.0" prefHeight="406.0" prefWidth="659.0" style="-fx-background-color: #e6cb9a; -fx-border-width: 3; -fx-border-color: #c99531;">
+         <children>
+            <ImageView fx:id="image1" fitHeight="90.0" fitWidth="102.0" layoutX="117.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/New%20folder/bueno.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image2" fitHeight="90.0" fitWidth="102.0" layoutX="245.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../CommonSem5Proj/Common/Common/images/cart.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="codeLbl1" alignment="CENTER" layoutX="153.0" layoutY="193.0" text="BB1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="priceLbl1" alignment="CENTER" layoutX="137.0" layoutY="237.0" prefWidth="60.0" text="5 NIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="codeLbl2" alignment="CENTER" layoutX="282.0" layoutY="193.0" text="MN8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="priceLbl2" alignment="CENTER" layoutX="266.0" layoutY="237.0" prefWidth="60.0" text="6 NIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="codeLbl3" alignment="CENTER" layoutX="410.0" layoutY="193.0" text="BU7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="priceLbl3" alignment="CENTER" layoutX="400.0" layoutY="237.0" prefWidth="50.0" text="7 NIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="codeLbl4" alignment="CENTER" layoutX="544.0" layoutY="193.0" text="SN6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="priceLbl4" alignment="CENTER" layoutX="529.0" layoutY="237.0" prefWidth="50.0" text="6 NIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="15.0" layoutY="185.0" prefHeight="30.0" prefWidth="73.0" text="Name" textFill="#7c6435">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="232.0" prefHeight="30.0" prefWidth="58.0" text="Price" textFill="#7c6435">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <ImageView fx:id="image3" fitHeight="80.0" fitWidth="102.0" layoutX="377.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../CommonSem5Proj/Common/Common/images/cart.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image4" fitHeight="80.0" fitWidth="102.0" layoutX="510.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../CommonSem5Proj/Common/Common/images/cart.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="15.0" layoutY="287.0" prefHeight="30.0" prefWidth="88.0" text="Available" textFill="#7c6435">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="amountLbl1" alignment="CENTER" layoutX="143.0" layoutY="287.0" prefHeight="30.0" prefWidth="50.0" text="6">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="amountLbl2" alignment="CENTER" layoutX="272.0" layoutY="287.0" prefHeight="30.0" prefWidth="50.0" text="5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="amountLbl3" alignment="CENTER" layoutX="400.0" layoutY="287.0" prefHeight="30.0" prefWidth="50.0" text="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="amountLbl4" alignment="CENTER" layoutX="541.0" layoutY="287.0" prefHeight="30.0" prefWidth="25.0" text="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Arrow" fitHeight="27.0" fitWidth="28.0" layoutX="471.0" layoutY="358.0" onMouseClicked="#NextItems" pickOnBounds="true" preserveRatio="true" rotate="360.0">
+               <image>
+                  <Image url="@../../../../CommonSem5Proj/Common/Common/images/arrowR.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Arrow1" fitHeight="27.0" fitWidth="28.0" layoutX="200.0" layoutY="358.0" onMouseClicked="#PrevItems" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../../../CommonSem5Proj/Common/Common/images/arrowR.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="less1" layoutX="126.0" layoutY="143.0" mnemonicParsing="false" onAction="#LessItem1" text=" - ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="more1" layoutX="165.0" layoutY="143.0" mnemonicParsing="false" onAction="#MoreItem1" text=" + ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="less2" layoutX="270.0" layoutY="143.0" mnemonicParsing="false" onAction="#LessItem2" text=" - ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="more2" layoutX="308.0" layoutY="143.0" mnemonicParsing="false" onAction="#MoreItem2" text=" + ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="less3" layoutX="406.0" layoutY="142.0" mnemonicParsing="false" onAction="#LessItem3" text=" - ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="more3" layoutX="444.0" layoutY="142.0" mnemonicParsing="false" onAction="#MoreItem3" text=" + ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="less4" layoutX="531.0" layoutY="143.0" mnemonicParsing="false" onAction="#LessItem4" prefHeight="31.0" prefWidth="39.0" text=" - ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="more4" layoutX="575.0" layoutY="143.0" mnemonicParsing="false" onAction="#MoreItem4" prefHeight="31.0" prefWidth="39.0" text=" + ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Label fx:id="amountCart1" layoutX="107.0" layoutY="150.0" text="0" />
+            <Label fx:id="amountCart2" layoutX="254.0" layoutY="150.0" text="0" />
+            <Label fx:id="amountCart3" layoutX="393.0" layoutY="150.0" prefWidth="6.0" text="0" />
+            <Label fx:id="amountCart4" layoutX="517.0" layoutY="150.0" text="0" />
+            <Label layoutX="405.0" layoutY="363.0" text="Next page" textFill="#7c6435">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="226.0" layoutY="363.0" text="Previous page" textFill="#7c6435">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="backBtn" layoutX="269.0" layoutY="681.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/exit-buttons.css" text="Back" textFill="WHITE" />
+      <Label layoutX="394.0" layoutY="38.0" text="Make your order" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="588.0" prefHeight="27.0" prefWidth="201.0" text="Total Price:" textFill="#7c6435">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="255.0" layoutY="131.0" prefHeight="30.0" prefWidth="300.0" text="Choose your items" textFill="#7c6435">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ProcceedToCartBtn" layoutX="737.0" layoutY="681.0" mnemonicParsing="false" onAction="#ProceedCartBtn" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" text="Proceed to Cart" textFill="WHITE" />
+      <TextField fx:id="TotalPricelbl" editable="false" layoutX="365.0" layoutY="587.0" prefHeight="29.0" prefWidth="88.0" style="-fx-background-radius: 10;" />
+   </children>
+</AnchorPane>

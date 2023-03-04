@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e3c68c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.OLOKPageController">
+   <children>
+      <Label layoutX="268.0" layoutY="75.0" text="Choose Configuration" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="olBtn" layoutX="268.0" layoutY="323.0" mnemonicParsing="false" onAction="#OLbtn" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" text="OL">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="okBtn" layoutX="528.0" layoutY="323.0" mnemonicParsing="false" onAction="#OKbtn" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" text="OK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <VBox alignment="BASELINE_CENTER" layoutX="-20.0" layoutY="-7.0" prefHeight="623.0" prefWidth="230.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Button fx:id="backBtn" layoutX="398.0" layoutY="526.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/exit-buttons.css" text="Back" />
+   </children>
+</Pane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="938.0" style="-fx-background-color: #e3c68c; -fx-border-color: #c14302; -fx-border-style: #555;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_server.ServerInfoController">
+   <children>
+      <Label layoutX="220.0" layoutY="103.0" text="Server Configuration" textFill="#7c6435">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="179.0" prefHeight="2.0" prefWidth="19.0" text="IP:" textFill="#7c6435">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="serverIptxt" editable="false" layoutX="289.0" layoutY="174.0" prefHeight="31.0" prefWidth="161.0" />
+      <Button fx:id="startServerbtn" layoutX="219.0" layoutY="328.0" mnemonicParsing="false" onAction="#RunServerBtn" prefHeight="45.0" prefWidth="225.0" text="Start Server" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" editable="true" layoutX="489.0" layoutY="147.0" prefHeight="153.0" prefWidth="420.0">
+         <columns>
+            <TableColumn fx:id="colIp" prefWidth="120.0" text="IP" />
+            <TableColumn fx:id="colUserID" prefWidth="115.0" text="USER ID" />
+            <TableColumn fx:id="colHost" prefWidth="81.0" text="HOST" />
+            <TableColumn fx:id="colStatus" prefWidth="102.0" text="STATUS" />
+         </columns>
+      </TableView>
+      <Label graphicTextGap="7.0" layoutX="375.0" layoutY="35.0" text="EKRUT Server Info" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="36.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <Label layoutX="602.0" layoutY="99.0" text="Connected Clients" textFill="#7c6435">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Button id="backBtn" layoutX="219.0" layoutY="512.0" mnemonicParsing="false" onAction="#QuitBtn" prefHeight="45.0" prefWidth="225.0" text="Quit" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="209.0" layoutY="227.0" prefHeight="21.0" prefWidth="37.0" text="Port:" textFill="#7c6435">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="serverPortxt" layoutX="289.0" layoutY="222.0" prefHeight="31.0" prefWidth="161.0" />
+      <Button layoutX="219.0" layoutY="390.0" mnemonicParsing="false" onAction="#RefreshClientsBtn" prefHeight="45.0" prefWidth="225.0" text="Refresh Clients" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="209.0" layoutY="273.0" prefHeight="21.0" prefWidth="77.0" text="Password:" textFill="#7c6435">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="databasePasswordtxt" layoutX="289.0" layoutY="268.0" prefHeight="31.0" prefWidth="161.0" />
+      <TextArea fx:id="screen" editable="false" layoutX="490.0" layoutY="343.0" prefHeight="223.0" prefWidth="420.0" promptText="Waiting for connection ..." style="-fx-font-size: 15px;" />
+      <Button fx:id="importUsersBtn" layoutX="219.0" layoutY="448.0" mnemonicParsing="false" onAction="#ImportUsersBtn" prefHeight="45.0" prefWidth="225.0" text="Import Data" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="654.0" layoutY="311.0" text="Console" textFill="#7c6435">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <VBox alignment="BASELINE_CENTER" layoutX="-20.0" layoutY="-12.0" prefHeight="613.0" prefWidth="220.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

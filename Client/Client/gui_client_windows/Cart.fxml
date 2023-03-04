@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e3c68c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.CartController">
+   <children>
+      <Button fx:id="backbtn" layoutX="256.0" layoutY="526.0" mnemonicParsing="false" onAction="#Back" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/exit-buttons.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="paymentbtn" layoutX="559.0" layoutY="526.0" mnemonicParsing="false" onAction="#ProceedPayment" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" text="Proceed Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="217.0" layoutY="143.0" onSort="#LoadAndSetTable" opacity="0.9" prefHeight="289.0" prefWidth="529.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/table.css">
+        <columns>
+          <TableColumn fx:id="productidcol" prefWidth="137.0" text="Product ID" />
+          <TableColumn fx:id="amountcol" prefWidth="228.0" text="Amount" />
+            <TableColumn fx:id="pricecol" minWidth="3.0" prefWidth="171.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="224.0" layoutY="96.0" prefHeight="39.0" prefWidth="146.0" text="Order Summary" textFill="#7c6435">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="428.0" layoutY="4.0" prefHeight="87.0" prefWidth="184.0" text="Cart" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="removeallbtn" fitHeight="31.0" fitWidth="36.0" layoutX="689.0" layoutY="100.0" onMouseClicked="#RemoveAll" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../CommonSem5Proj/Common/Common/images/deleteall.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="removebtn" layoutX="618.0" layoutY="439.0" mnemonicParsing="false" onAction="#RemoveItem" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" text="remove item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <VBox alignment="BASELINE_CENTER" layoutX="-13.0" layoutY="-7.0" prefHeight="629.0" prefWidth="230.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Label layoutX="222.0" layoutY="438.0" prefHeight="39.0" prefWidth="230.0" text="Total Price:" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalpricetxt" alignment="CENTER" editable="false" layoutX="341.0" layoutY="442.0" onAction="#TotalPrice" prefHeight="31.0" prefWidth="94.0" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <ImageView fitHeight="55.0" fitWidth="69.0" layoutX="341.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../CommonSem5Proj/Common/Common/images/cart.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="510.0" layoutY="96.0" prefHeight="39.0" prefWidth="159.0" text="Remove all items" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

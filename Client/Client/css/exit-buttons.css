@@ -1,0 +1,27 @@
+#backBtn {
+ -fx-font-weight:bold;
+-fx-background-color:#f9f0db;
+-fx-background-radius:22;
+-fx-text-fill:  #a0702a;
+-fx-font-size:16;
+}
+
+#backBtn:hover {
+-fx-font-weight:bold;
+-fx-background-color: #f3a19a;
+-fx-background-radius:22;
+-fx-font-size:16;
+-fx-text-fill:  #ca8d35;
+-fx-border-radius:20;
+-fx-border-vidth:3;
+}
+
+#backBtn:pressed {
+    -fx-font-weight:bold;
+    -fx-background-color:#f3a19a;
+    -fx-background-radius:22;
+    -fx-font-size:16;
+    -fx-text-fill:   #FFFFFF;
+    -fx-border-vidth:8;
+    -fx-rotate:5
+}

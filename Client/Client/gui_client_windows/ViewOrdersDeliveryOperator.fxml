@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e3c68c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.ViewOrdersDeliveryOperatorController">
+   <children>
+      <Label fx:id="titlelbl" alignment="CENTER" contentDisplay="TOP" layoutX="251.0" layoutY="14.0" prefHeight="91.0" prefWidth="459.0" text="EKRUT" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="40.0" />
+         </font>
+      </Label>
+      <VBox alignment="BASELINE_CENTER" layoutY="-5.0" prefHeight="636.0" prefWidth="230.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" />
+         </children>
+      </VBox>
+      <Button id="backBtn" fx:id="logOutBtn" layoutX="269.0" layoutY="526.0" mnemonicParsing="false" onAction="#logOutButton" prefHeight="38.0" prefWidth="161.0" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="DeliveriesTable" editable="true" layoutX="243.0" layoutY="121.0" prefHeight="280.0" prefWidth="493.0">
+        <columns>
+          <TableColumn fx:id="orderNumberCol" prefWidth="65.0" text="Order #" />
+          <TableColumn fx:id="customerIDCol" prefWidth="116.0" text="Customer ID" />
+            <TableColumn fx:id="totalPriceCol" prefWidth="109.0" text="Total Price" />
+            <TableColumn fx:id="locationCol" prefWidth="97.0" text="Location" />
+            <TableColumn fx:id="statusCol" onEditCommit="#ChangeStatus" prefWidth="105.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="525.0" layoutY="526.0" mnemonicParsing="false" onAction="#UpdateDeliveries" prefHeight="38.0" prefWidth="161.0" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="400.0" layoutY="410.0" mnemonicParsing="false" onAction="#ResetChangesBtn" prefHeight="38.0" prefWidth="161.0" text="Reset Changes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

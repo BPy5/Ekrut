@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e3c68c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.UpdateThresholdWindowController">
+   <children>
+      <Label layoutX="322.0" layoutY="257.0" text="Machine code:" textFill="#614e2d">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="318.0" prefHeight="30.0" prefWidth="178.0" text="Threshold value:" textFill="#614e2d">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="thresholdValue" layoutX="506.0" layoutY="318.0" prefHeight="31.0" prefWidth="137.0" style="-fx-background-radius: 10;" />
+      <Button id="backBtn" fx:id="backBtn" layoutX="269.0" layoutY="526.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="38.0" prefWidth="161.0" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateBtn" layoutX="525.0" layoutY="526.0" mnemonicParsing="false" onAction="#UpdateBtn" prefHeight="38.0" prefWidth="161.0" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="286.0" layoutY="44.0" text="Update Threshold" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="40.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="machineCode" layoutX="506.0" layoutY="258.0" onAction="#SelectMachineId" prefHeight="26.0" prefWidth="137.0" />
+      <VBox alignment="BASELINE_CENTER" layoutX="-21.0" layoutY="-10.0" prefHeight="626.0" prefWidth="122.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Label fx:id="locationlbl" layoutX="321.0" layoutY="198.0" text="Location: " textFill="#614e2d">
+         <font>
+            <Font name="Elephant" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

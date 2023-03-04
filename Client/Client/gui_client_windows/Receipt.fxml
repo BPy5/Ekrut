@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e3c68c;" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.ReceiptController">
+   <children>
+      <Label layoutX="391.0" layoutY="14.0" prefHeight="82.0" prefWidth="170.0" text="Receipt" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="114.0" prefHeight="31.0" prefWidth="342.0" text="Your order summary" textFill="#7c6435">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="okBtn" layoutX="525.0" layoutY="526.0" mnemonicParsing="false" onAction="#OKBtn" prefHeight="38.0" prefWidth="161.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="receiptTable" layoutX="290.0" layoutY="145.0" opacity="0.9" prefHeight="318.0" prefWidth="372.0" stylesheets="@../../../../CommonSem5Proj/Common/Common/css/table.css">
+         <columns>
+            <TableColumn fx:id="productIdCol" prefWidth="92.0" text="Product ID" />
+            <TableColumn fx:id="amountCol" prefWidth="169.0" text="Amount" />
+            <TableColumn fx:id="priceCol" prefWidth="110.0" text="Price" />
+         </columns>
+      </TableView>
+      <VBox alignment="BASELINE_CENTER" layoutX="-21.0" layoutY="-7.0" prefHeight="623.0" prefWidth="230.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <stylesheets>
+            <URL value="@../../../../CommonSem5Proj/Common/Common/css/buttons.css" />
+            <URL value="@../../../../CommonSem5Proj/Common/Common/css/exit-buttons.css" />
+         </stylesheets>
+      </VBox>
+      <Label fx:id="ordercodelbl" layoutX="290.0" layoutY="467.0" text="Order code :" textFill="#7c6435">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

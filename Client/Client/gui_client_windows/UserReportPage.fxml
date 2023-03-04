@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e3c68c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_client.UserReportPageController">
+   <children>
+      <Label layoutX="325.0" layoutY="56.0" text="Users Reports" textFill="#7c6435">
+         <font>
+            <Font name="Elephant" size="40.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbYear" layoutX="398.0" layoutY="231.0" onAction="#SelectYear" prefHeight="49.0" prefWidth="140.0" promptText="Year" style="-fx-pref-height: 35;" />
+      <ComboBox fx:id="cmbMonth" layoutX="398.0" layoutY="310.0" onAction="#SelectMonth" prefHeight="41.0" prefWidth="140.0" promptText="Month" style="-fx-pref-height: 35;" />
+      <Button id="backBtn" fx:id="backBtn" layoutX="269.0" layoutY="526.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="38.0" prefWidth="161.0" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="525.0" layoutY="526.0" mnemonicParsing="false" onAction="#ShowReportBtn" prefHeight="38.0" prefWidth="161.0" text="Show Report">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <VBox alignment="BASELINE_CENTER" layoutX="-20.0" prefHeight="626.0" prefWidth="230.0" style="-fx-background-color: #FEF5EA; -fx-border-color: #c99531; -fx-border-width: 5;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="image" fitHeight="280.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
